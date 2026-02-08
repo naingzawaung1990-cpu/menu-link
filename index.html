@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Redirecting...</title>
+  <meta http-equiv="refresh" content="0;url=https://qr-menu-firebase-cex4wc3ghyukqngnhhr7r2.streamlit.app" id="meta-redirect">
+</head>
+<body>
+  <p style="font-family:sans-serif;text-align:center;margin-top:2rem;">လာရောက်မှုကို လက်ခံနေပါတယ်...</p>
+  <p style="font-family:sans-serif;text-align:center;font-size:14px;color:#666;"><a href="#" id="fallback">အလိုအလျောက် မသွားရင် ဒီနေရာနှိပ်ပါ</a></p>
+  <script>
+    // ============================================
+    // ဒီ link တစ်ခုပဲ ပြောင်းပါ — Streamlit ပျက်ရင် backup URL ထည့်ပါ
+    // ============================================
+    var TARGET_BASE = "https://qr-menu-firebase-cex4wc3ghyukqngnhhr7r2.streamlit.app";
+    var qs = window.location.search || "";
+    var target = TARGET_BASE.replace(/\/$/, "") + qs;
+    document.getElementById("meta-redirect").setAttribute("content", "0;url=" + target);
+    document.getElementById("fallback").href = target;
+    window.location.replace(target);
+  </script>
+</body>
+</html>
